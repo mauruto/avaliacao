@@ -2,17 +2,18 @@
 
 require_once("vendor/autoload.php");
 
-$app = new \Slim\Slim();
+use \Slim\Slim;
+use \avaliacao\Page;
+
+$app = new Slim();
 
 $app->config('debug', true);
 
 $app->get('/', function() {
     
-	$sql = new avaliacao\DB\Sql();
+	$page = new Page();
 
-	$results = $sql->select("SELECT * FROM tb_funcionarios");
-
-	echo json_encode($results);
+	$page->setTpl("Index");
 
 });
 
