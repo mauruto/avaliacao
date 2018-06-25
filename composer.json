@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\avaliacao\\php-classes\\src"
+            "avaliacao\\": "vendor\\avaliacao\\php-classes\\src"
         }
     }
 }
