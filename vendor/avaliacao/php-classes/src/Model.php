@@ -22,6 +22,7 @@ class Model{
 				return $this->values[$fieldName] = $args[0];
 			break;
 		}
+		
 	}
 
 	public function setData($data = array())
